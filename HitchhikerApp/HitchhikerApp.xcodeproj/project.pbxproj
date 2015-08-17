@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A51B9BF61B8286D5008D0391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9BF51B8286D5008D0391 /* AppDelegate.swift */; };
+		A51B9BF81B8286D5008D0391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9BF71B8286D5008D0391 /* ViewController.swift */; };
+		A51B9BFB1B8286D5008D0391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51B9BF91B8286D5008D0391 /* Main.storyboard */; };
+		A51B9BFD1B8286D5008D0391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51B9BFC1B8286D5008D0391 /* Assets.xcassets */; };
+		A51B9C001B8286D5008D0391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51B9BFE1B8286D5008D0391 /* LaunchScreen.storyboard */; };
+		A51B9C0B1B8286D5008D0391 /* HitchhikerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C0A1B8286D5008D0391 /* HitchhikerAppTests.swift */; };
+		A51B9C161B8286D5008D0391 /* HitchhikerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C151B8286D5008D0391 /* HitchhikerAppUITests.swift */; };
+		A51B9C1B1B8286D5008D0391 /* HitchhikerApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A51B9C1A1B8286D5008D0391 /* HitchhikerApp WatchKit App.app */; };
+		A51B9C211B8286D5008D0391 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51B9C1F1B8286D5008D0391 /* Interface.storyboard */; };
+		A51B9C231B8286D5008D0391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51B9C221B8286D5008D0391 /* Assets.xcassets */; };
+		A51B9C2A1B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A51B9C291B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A51B9C2F1B8286D5008D0391 /* RequestSpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C2E1B8286D5008D0391 /* RequestSpaceShip.swift */; };
+		A51B9C311B8286D5008D0391 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */; };
+		A51B9C331B8286D5008D0391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51B9C321B8286D5008D0391 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A51B9C071B8286D5008D0391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51B9BEA1B8286D5008D0391 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51B9BF11B8286D5008D0391;
+			remoteInfo = HitchhikerApp;
+		};
+		A51B9C121B8286D5008D0391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51B9BEA1B8286D5008D0391 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51B9BF11B8286D5008D0391;
+			remoteInfo = HitchhikerApp;
+		};
+		A51B9C1C1B8286D5008D0391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51B9BEA1B8286D5008D0391 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51B9C191B8286D5008D0391;
+			remoteInfo = "HitchhikerApp WatchKit App";
+		};
+		A51B9C2B1B8286D5008D0391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51B9BEA1B8286D5008D0391 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51B9C281B8286D5008D0391;
+			remoteInfo = "HitchhikerApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A51B9C3A1B8286D5008D0391 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A51B9C2A1B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C3E1B8286D5008D0391 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A51B9C1B1B8286D5008D0391 /* HitchhikerApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A51B9BF21B8286D5008D0391 /* HitchhikerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitchhikerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51B9BF51B8286D5008D0391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A51B9BF71B8286D5008D0391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A51B9BFA1B8286D5008D0391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A51B9BFC1B8286D5008D0391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A51B9BFF1B8286D5008D0391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A51B9C011B8286D5008D0391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51B9C061B8286D5008D0391 /* HitchhikerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitchhikerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51B9C0A1B8286D5008D0391 /* HitchhikerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitchhikerAppTests.swift; sourceTree = "<group>"; };
+		A51B9C0C1B8286D5008D0391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51B9C111B8286D5008D0391 /* HitchhikerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitchhikerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51B9C151B8286D5008D0391 /* HitchhikerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitchhikerAppUITests.swift; sourceTree = "<group>"; };
+		A51B9C171B8286D5008D0391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51B9C1A1B8286D5008D0391 /* HitchhikerApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HitchhikerApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51B9C201B8286D5008D0391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A51B9C221B8286D5008D0391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A51B9C241B8286D5008D0391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51B9C291B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HitchhikerApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51B9C2E1B8286D5008D0391 /* RequestSpaceShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSpaceShip.swift; sourceTree = "<group>"; };
+		A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A51B9C321B8286D5008D0391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A51B9C341B8286D5008D0391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A51B9BEF1B8286D5008D0391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C031B8286D5008D0391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C0E1B8286D5008D0391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C261B8286D5008D0391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A51B9BE91B8286D5008D0391 = {
+			isa = PBXGroup;
+			children = (
+				A51B9BF41B8286D5008D0391 /* HitchhikerApp */,
+				A51B9C091B8286D5008D0391 /* HitchhikerAppTests */,
+				A51B9C141B8286D5008D0391 /* HitchhikerAppUITests */,
+				A51B9C1E1B8286D5008D0391 /* HitchhikerApp WatchKit App */,
+				A51B9C2D1B8286D5008D0391 /* HitchhikerApp WatchKit Extension */,
+				A51B9BF31B8286D5008D0391 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A51B9BF31B8286D5008D0391 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9BF21B8286D5008D0391 /* HitchhikerApp.app */,
+				A51B9C061B8286D5008D0391 /* HitchhikerAppTests.xctest */,
+				A51B9C111B8286D5008D0391 /* HitchhikerAppUITests.xctest */,
+				A51B9C1A1B8286D5008D0391 /* HitchhikerApp WatchKit App.app */,
+				A51B9C291B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A51B9BF41B8286D5008D0391 /* HitchhikerApp */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9BF51B8286D5008D0391 /* AppDelegate.swift */,
+				A51B9BF71B8286D5008D0391 /* ViewController.swift */,
+				A51B9BF91B8286D5008D0391 /* Main.storyboard */,
+				A51B9BFC1B8286D5008D0391 /* Assets.xcassets */,
+				A51B9BFE1B8286D5008D0391 /* LaunchScreen.storyboard */,
+				A51B9C011B8286D5008D0391 /* Info.plist */,
+			);
+			path = HitchhikerApp;
+			sourceTree = "<group>";
+		};
+		A51B9C091B8286D5008D0391 /* HitchhikerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9C0A1B8286D5008D0391 /* HitchhikerAppTests.swift */,
+				A51B9C0C1B8286D5008D0391 /* Info.plist */,
+			);
+			path = HitchhikerAppTests;
+			sourceTree = "<group>";
+		};
+		A51B9C141B8286D5008D0391 /* HitchhikerAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9C151B8286D5008D0391 /* HitchhikerAppUITests.swift */,
+				A51B9C171B8286D5008D0391 /* Info.plist */,
+			);
+			path = HitchhikerAppUITests;
+			sourceTree = "<group>";
+		};
+		A51B9C1E1B8286D5008D0391 /* HitchhikerApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9C1F1B8286D5008D0391 /* Interface.storyboard */,
+				A51B9C221B8286D5008D0391 /* Assets.xcassets */,
+				A51B9C241B8286D5008D0391 /* Info.plist */,
+			);
+			path = "HitchhikerApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		A51B9C2D1B8286D5008D0391 /* HitchhikerApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9C2E1B8286D5008D0391 /* RequestSpaceShip.swift */,
+				A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */,
+				A51B9C321B8286D5008D0391 /* Assets.xcassets */,
+				A51B9C341B8286D5008D0391 /* Info.plist */,
+			);
+			path = "HitchhikerApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A51B9BF11B8286D5008D0391 /* HitchhikerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51B9C3F1B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerApp" */;
+			buildPhases = (
+				A51B9BEE1B8286D5008D0391 /* Sources */,
+				A51B9BEF1B8286D5008D0391 /* Frameworks */,
+				A51B9BF01B8286D5008D0391 /* Resources */,
+				A51B9C3E1B8286D5008D0391 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51B9C1D1B8286D5008D0391 /* PBXTargetDependency */,
+			);
+			name = HitchhikerApp;
+			productName = HitchhikerApp;
+			productReference = A51B9BF21B8286D5008D0391 /* HitchhikerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A51B9C051B8286D5008D0391 /* HitchhikerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51B9C421B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerAppTests" */;
+			buildPhases = (
+				A51B9C021B8286D5008D0391 /* Sources */,
+				A51B9C031B8286D5008D0391 /* Frameworks */,
+				A51B9C041B8286D5008D0391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51B9C081B8286D5008D0391 /* PBXTargetDependency */,
+			);
+			name = HitchhikerAppTests;
+			productName = HitchhikerAppTests;
+			productReference = A51B9C061B8286D5008D0391 /* HitchhikerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A51B9C101B8286D5008D0391 /* HitchhikerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51B9C451B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerAppUITests" */;
+			buildPhases = (
+				A51B9C0D1B8286D5008D0391 /* Sources */,
+				A51B9C0E1B8286D5008D0391 /* Frameworks */,
+				A51B9C0F1B8286D5008D0391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51B9C131B8286D5008D0391 /* PBXTargetDependency */,
+			);
+			name = HitchhikerAppUITests;
+			productName = HitchhikerAppUITests;
+			productReference = A51B9C111B8286D5008D0391 /* HitchhikerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A51B9C191B8286D5008D0391 /* HitchhikerApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51B9C3B1B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerApp WatchKit App" */;
+			buildPhases = (
+				A51B9C181B8286D5008D0391 /* Resources */,
+				A51B9C3A1B8286D5008D0391 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51B9C2C1B8286D5008D0391 /* PBXTargetDependency */,
+			);
+			name = "HitchhikerApp WatchKit App";
+			productName = "HitchhikerApp WatchKit App";
+			productReference = A51B9C1A1B8286D5008D0391 /* HitchhikerApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A51B9C281B8286D5008D0391 /* HitchhikerApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51B9C371B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerApp WatchKit Extension" */;
+			buildPhases = (
+				A51B9C251B8286D5008D0391 /* Sources */,
+				A51B9C261B8286D5008D0391 /* Frameworks */,
+				A51B9C271B8286D5008D0391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HitchhikerApp WatchKit Extension";
+			productName = "HitchhikerApp WatchKit Extension";
+			productReference = A51B9C291B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A51B9BEA1B8286D5008D0391 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = CarolinaBarreiro;
+				TargetAttributes = {
+					A51B9BF11B8286D5008D0391 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					A51B9C051B8286D5008D0391 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A51B9BF11B8286D5008D0391;
+					};
+					A51B9C101B8286D5008D0391 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A51B9BF11B8286D5008D0391;
+					};
+					A51B9C191B8286D5008D0391 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					A51B9C281B8286D5008D0391 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = A51B9BED1B8286D5008D0391 /* Build configuration list for PBXProject "HitchhikerApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A51B9BE91B8286D5008D0391;
+			productRefGroup = A51B9BF31B8286D5008D0391 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A51B9BF11B8286D5008D0391 /* HitchhikerApp */,
+				A51B9C051B8286D5008D0391 /* HitchhikerAppTests */,
+				A51B9C101B8286D5008D0391 /* HitchhikerAppUITests */,
+				A51B9C191B8286D5008D0391 /* HitchhikerApp WatchKit App */,
+				A51B9C281B8286D5008D0391 /* HitchhikerApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A51B9BF01B8286D5008D0391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9C001B8286D5008D0391 /* LaunchScreen.storyboard in Resources */,
+				A51B9BFD1B8286D5008D0391 /* Assets.xcassets in Resources */,
+				A51B9BFB1B8286D5008D0391 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C041B8286D5008D0391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C0F1B8286D5008D0391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C181B8286D5008D0391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9C231B8286D5008D0391 /* Assets.xcassets in Resources */,
+				A51B9C211B8286D5008D0391 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C271B8286D5008D0391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9C331B8286D5008D0391 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A51B9BEE1B8286D5008D0391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9BF81B8286D5008D0391 /* ViewController.swift in Sources */,
+				A51B9BF61B8286D5008D0391 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C021B8286D5008D0391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9C0B1B8286D5008D0391 /* HitchhikerAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C0D1B8286D5008D0391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9C161B8286D5008D0391 /* HitchhikerAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51B9C251B8286D5008D0391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51B9C311B8286D5008D0391 /* ExtensionDelegate.swift in Sources */,
+				A51B9C2F1B8286D5008D0391 /* RequestSpaceShip.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A51B9C081B8286D5008D0391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51B9BF11B8286D5008D0391 /* HitchhikerApp */;
+			targetProxy = A51B9C071B8286D5008D0391 /* PBXContainerItemProxy */;
+		};
+		A51B9C131B8286D5008D0391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51B9BF11B8286D5008D0391 /* HitchhikerApp */;
+			targetProxy = A51B9C121B8286D5008D0391 /* PBXContainerItemProxy */;
+		};
+		A51B9C1D1B8286D5008D0391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51B9C191B8286D5008D0391 /* HitchhikerApp WatchKit App */;
+			targetProxy = A51B9C1C1B8286D5008D0391 /* PBXContainerItemProxy */;
+		};
+		A51B9C2C1B8286D5008D0391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51B9C281B8286D5008D0391 /* HitchhikerApp WatchKit Extension */;
+			targetProxy = A51B9C2B1B8286D5008D0391 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A51B9BF91B8286D5008D0391 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51B9BFA1B8286D5008D0391 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A51B9BFE1B8286D5008D0391 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51B9BFF1B8286D5008D0391 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A51B9C1F1B8286D5008D0391 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51B9C201B8286D5008D0391 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A51B9C351B8286D5008D0391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A51B9C361B8286D5008D0391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A51B9C381B8286D5008D0391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HitchhikerApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A51B9C391B8286D5008D0391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HitchhikerApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A51B9C3C1B8286D5008D0391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HitchhikerApp_WatchKit_Extension;
+				INFOPLIST_FILE = "HitchhikerApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A51B9C3D1B8286D5008D0391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HitchhikerApp_WatchKit_Extension;
+				INFOPLIST_FILE = "HitchhikerApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A51B9C401B8286D5008D0391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HitchhikerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A51B9C411B8286D5008D0391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HitchhikerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A51B9C431B8286D5008D0391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HitchhikerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HitchhikerApp.app/HitchhikerApp";
+			};
+			name = Debug;
+		};
+		A51B9C441B8286D5008D0391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HitchhikerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HitchhikerApp.app/HitchhikerApp";
+			};
+			name = Release;
+		};
+		A51B9C461B8286D5008D0391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HitchhikerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HitchhikerApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A51B9C471B8286D5008D0391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HitchhikerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HitchhikerApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A51B9BED1B8286D5008D0391 /* Build configuration list for PBXProject "HitchhikerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B9C351B8286D5008D0391 /* Debug */,
+				A51B9C361B8286D5008D0391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51B9C371B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B9C381B8286D5008D0391 /* Debug */,
+				A51B9C391B8286D5008D0391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A51B9C3B1B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B9C3C1B8286D5008D0391 /* Debug */,
+				A51B9C3D1B8286D5008D0391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A51B9C3F1B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B9C401B8286D5008D0391 /* Debug */,
+				A51B9C411B8286D5008D0391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A51B9C421B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B9C431B8286D5008D0391 /* Debug */,
+				A51B9C441B8286D5008D0391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A51B9C451B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51B9C461B8286D5008D0391 /* Debug */,
+				A51B9C471B8286D5008D0391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A51B9BEA1B8286D5008D0391 /* Project object */;
+}
