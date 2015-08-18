@@ -1,5 +1,5 @@
 //
-//  SpaceShipInfo.swift
+//  AvailableSpaceShip.swift
 //  HitchhikerApp
 //
 //  Created by Carolina Barreiro Cancela on 18/08/15.
@@ -8,12 +8,9 @@
 
 import Foundation
 
-struct SpasceShipInfo {
+struct AvailableSpaceship {
   let id: String
-  let pictureDriver: NSURL
-  let nameDriver: String
-  let specie: String
+  let pictureShip: NSURL
+  let typeSpaceship: String
   let planet: String
-  let pictureSpaceShip: NSURL
-  let typeSpaceShip: String
 }

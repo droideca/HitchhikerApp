@@ -27,8 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 	}
 	
 	func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
-		let emoji = applicationContext["emoji"] as? String
-		print(emoji)
+	
 		
 	}
 

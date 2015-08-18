@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A8430FB1B832EB3007BE0EB /* AvailableSpaceShipsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8430FA1B832EB3007BE0EB /* AvailableSpaceShipsController.swift */; };
-		6AC9A6E31B835AF80010F4C9 /* AvailableSpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E21B835AF80010F4C9 /* AvailableSpaceShip.swift */; };
-		6AC9A6E51B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E41B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift */; };
-		6AC9A6E81B835DA80010F4C9 /* SpaceShipInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E71B835DA80010F4C9 /* SpaceShipInfo.swift */; };
-		6AC9A6EA1B835FDE0010F4C9 /* SpaceShipInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E91B835FDE0010F4C9 /* SpaceShipInfoController.swift */; };
-		6AC9A6EC1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6EB1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift */; };
+		6A8430FB1B832EB3007BE0EB /* AvailableSpaceshipsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8430FA1B832EB3007BE0EB /* AvailableSpaceshipsController.swift */; };
+		6AC9A6E31B835AF80010F4C9 /* AvailableSpaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E21B835AF80010F4C9 /* AvailableSpaceship.swift */; };
+		6AC9A6E51B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E41B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift */; };
+		6AC9A6E81B835DA80010F4C9 /* SpaceshipInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E71B835DA80010F4C9 /* SpaceshipInfo.swift */; };
+		6AC9A6EA1B835FDE0010F4C9 /* SpaceshipInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E91B835FDE0010F4C9 /* SpaceshipInfoController.swift */; };
+		6AC9A6EC1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6EB1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift */; };
 		6AC9A6EE1B8361DB0010F4C9 /* JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6ED1B8361DB0010F4C9 /* JsonGen.swift */; };
 		A51B9BF61B8286D5008D0391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9BF51B8286D5008D0391 /* AppDelegate.swift */; };
 		A51B9BF81B8286D5008D0391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9BF71B8286D5008D0391 /* ViewController.swift */; };
@@ -25,9 +25,13 @@
 		A51B9C211B8286D5008D0391 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51B9C1F1B8286D5008D0391 /* Interface.storyboard */; };
 		A51B9C231B8286D5008D0391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51B9C221B8286D5008D0391 /* Assets.xcassets */; };
 		A51B9C2A1B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A51B9C291B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A51B9C2F1B8286D5008D0391 /* RequestSpaceShipController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C2E1B8286D5008D0391 /* RequestSpaceShipController.swift */; };
+		A51B9C2F1B8286D5008D0391 /* RequestSpaceshipController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C2E1B8286D5008D0391 /* RequestSpaceshipController.swift */; };
 		A51B9C311B8286D5008D0391 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */; };
 		A51B9C331B8286D5008D0391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51B9C321B8286D5008D0391 /* Assets.xcassets */; };
+		A582E1AB1B839C52002E5E68 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A582E1AA1B839C52002E5E68 /* Constants.swift */; };
+		A5896A111B83A4A700C8F64A /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5896A101B83A4A700C8F64A /* ConnectionManager.swift */; };
+		A5896A151B83AC5000C8F64A /* AvailableSpaceshipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5896A141B83AC5000C8F64A /* AvailableSpaceshipCell.swift */; };
+		A5896A171B83AE4200C8F64A /* WKInterfaceImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5896A161B83AE4200C8F64A /* WKInterfaceImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,12 +91,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6A8430FA1B832EB3007BE0EB /* AvailableSpaceShipsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceShipsController.swift; sourceTree = "<group>"; };
-		6AC9A6E21B835AF80010F4C9 /* AvailableSpaceShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceShip.swift; sourceTree = "<group>"; };
-		6AC9A6E41B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AvailableSpaceShip+JsonGen.swift"; sourceTree = "<group>"; };
-		6AC9A6E71B835DA80010F4C9 /* SpaceShipInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceShipInfo.swift; sourceTree = "<group>"; };
-		6AC9A6E91B835FDE0010F4C9 /* SpaceShipInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceShipInfoController.swift; sourceTree = "<group>"; };
-		6AC9A6EB1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpaceShipInfo+JsonGen.swift"; sourceTree = "<group>"; };
+		6A8430FA1B832EB3007BE0EB /* AvailableSpaceshipsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceshipsController.swift; sourceTree = "<group>"; };
+		6AC9A6E21B835AF80010F4C9 /* AvailableSpaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceship.swift; sourceTree = "<group>"; };
+		6AC9A6E41B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AvailableSpaceship+JsonGen.swift"; sourceTree = "<group>"; };
+		6AC9A6E71B835DA80010F4C9 /* SpaceshipInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceshipInfo.swift; sourceTree = "<group>"; };
+		6AC9A6E91B835FDE0010F4C9 /* SpaceshipInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceshipInfoController.swift; sourceTree = "<group>"; };
+		6AC9A6EB1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpaceshipInfo+JsonGen.swift"; sourceTree = "<group>"; };
 		6AC9A6ED1B8361DB0010F4C9 /* JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonGen.swift; sourceTree = "<group>"; };
 		A51B9BF21B8286D5008D0391 /* HitchhikerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitchhikerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51B9BF51B8286D5008D0391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,10 +116,14 @@
 		A51B9C221B8286D5008D0391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51B9C241B8286D5008D0391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51B9C291B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HitchhikerApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A51B9C2E1B8286D5008D0391 /* RequestSpaceShipController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSpaceShipController.swift; sourceTree = "<group>"; };
+		A51B9C2E1B8286D5008D0391 /* RequestSpaceshipController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSpaceshipController.swift; sourceTree = "<group>"; };
 		A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A51B9C321B8286D5008D0391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51B9C341B8286D5008D0391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A582E1AA1B839C52002E5E68 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5896A101B83A4A700C8F64A /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		A5896A141B83AC5000C8F64A /* AvailableSpaceshipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceshipCell.swift; sourceTree = "<group>"; };
+		A5896A161B83AE4200C8F64A /* WKInterfaceImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKInterfaceImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,19 +226,87 @@
 		A51B9C2D1B8286D5008D0391 /* HitchhikerApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A51B9C2E1B8286D5008D0391 /* RequestSpaceShipController.swift */,
-				6A8430FA1B832EB3007BE0EB /* AvailableSpaceShipsController.swift */,
-				A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */,
-				A51B9C321B8286D5008D0391 /* Assets.xcassets */,
-				A51B9C341B8286D5008D0391 /* Info.plist */,
-				6AC9A6E41B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift */,
-				6AC9A6E21B835AF80010F4C9 /* AvailableSpaceShip.swift */,
-				6AC9A6EB1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift */,
-				6AC9A6E71B835DA80010F4C9 /* SpaceShipInfo.swift */,
-				6AC9A6E91B835FDE0010F4C9 /* SpaceShipInfoController.swift */,
-				6AC9A6ED1B8361DB0010F4C9 /* JsonGen.swift */,
+				A5896A131B83AC3E00C8F64A /* Views */,
+				A5896A121B83A4BE00C8F64A /* Manager */,
+				A582E1A91B83995C002E5E68 /* Vendor */,
+				A582E1A81B839921002E5E68 /* Parsers */,
+				A582E1A71B8398E6002E5E68 /* Resources */,
+				A582E1A51B8397A9002E5E68 /* Controllers */,
+				A582E1A41B839780002E5E68 /* Models */,
+				A582E1A61B8398AF002E5E68 /* Application */,
 			);
 			path = "HitchhikerApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A582E1A41B839780002E5E68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6AC9A6E71B835DA80010F4C9 /* SpaceshipInfo.swift */,
+				6AC9A6E21B835AF80010F4C9 /* AvailableSpaceship.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A582E1A51B8397A9002E5E68 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AC9A6E91B835FDE0010F4C9 /* SpaceshipInfoController.swift */,
+				A51B9C2E1B8286D5008D0391 /* RequestSpaceshipController.swift */,
+				6A8430FA1B832EB3007BE0EB /* AvailableSpaceshipsController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A582E1A61B8398AF002E5E68 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A582E1AA1B839C52002E5E68 /* Constants.swift */,
+				A51B9C341B8286D5008D0391 /* Info.plist */,
+				A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		A582E1A71B8398E6002E5E68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A51B9C321B8286D5008D0391 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A582E1A81B839921002E5E68 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				6AC9A6E41B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift */,
+				6AC9A6EB1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		A582E1A91B83995C002E5E68 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				6AC9A6ED1B8361DB0010F4C9 /* JsonGen.swift */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		A5896A121B83A4BE00C8F64A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A5896A101B83A4A700C8F64A /* ConnectionManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		A5896A131B83AC3E00C8F64A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5896A141B83AC5000C8F64A /* AvailableSpaceshipCell.swift */,
+				A5896A161B83AE4200C8F64A /* WKInterfaceImageExtension.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,15 +526,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC9A6E31B835AF80010F4C9 /* AvailableSpaceShip.swift in Sources */,
-				6AC9A6EC1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift in Sources */,
+				6AC9A6E31B835AF80010F4C9 /* AvailableSpaceship.swift in Sources */,
+				6AC9A6EC1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift in Sources */,
 				A51B9C311B8286D5008D0391 /* ExtensionDelegate.swift in Sources */,
-				A51B9C2F1B8286D5008D0391 /* RequestSpaceShipController.swift in Sources */,
-				6AC9A6E51B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift in Sources */,
-				6AC9A6E81B835DA80010F4C9 /* SpaceShipInfo.swift in Sources */,
-				6AC9A6EA1B835FDE0010F4C9 /* SpaceShipInfoController.swift in Sources */,
-				6A8430FB1B832EB3007BE0EB /* AvailableSpaceShipsController.swift in Sources */,
+				A51B9C2F1B8286D5008D0391 /* RequestSpaceshipController.swift in Sources */,
+				6AC9A6E51B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift in Sources */,
+				A582E1AB1B839C52002E5E68 /* Constants.swift in Sources */,
+				6AC9A6E81B835DA80010F4C9 /* SpaceshipInfo.swift in Sources */,
+				6AC9A6EA1B835FDE0010F4C9 /* SpaceshipInfoController.swift in Sources */,
+				A5896A151B83AC5000C8F64A /* AvailableSpaceshipCell.swift in Sources */,
+				6A8430FB1B832EB3007BE0EB /* AvailableSpaceshipsController.swift in Sources */,
+				A5896A111B83A4A700C8F64A /* ConnectionManager.swift in Sources */,
 				6AC9A6EE1B8361DB0010F4C9 /* JsonGen.swift in Sources */,
+				A5896A171B83AE4200C8F64A /* WKInterfaceImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

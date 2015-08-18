@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 import WatchConnectivity
 
-class RequestSpaceShipController: WKInterfaceController, WCSessionDelegate {
+class RequestSpaceshipController: WKInterfaceController, WCSessionDelegate {
 
 	var session : WCSession!
 	@IBOutlet var userLocalizationMap: WKInterfaceMap!
@@ -42,13 +42,8 @@ class RequestSpaceShipController: WKInterfaceController, WCSessionDelegate {
     }
 
 	@IBAction func checkClosestSpaceShipAction() {
-		let applicationDict = ["emoji":"merda"]
 
-		session.sendMessage(applicationDict, replyHandler: {(_: [String : AnyObject]) -> Void in
-			// handle reply from iPhone app here
-			}, errorHandler: {(error ) -> Void in
-				// catch any errors here
-		})
+		
 	}
 
 }
