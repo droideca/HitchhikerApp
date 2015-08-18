@@ -15,31 +15,24 @@ class RequestSpaceshipController: WKInterfaceController, WCSessionDelegate {
 	var session : WCSession!
 	@IBOutlet var userLocalizationMap: WKInterfaceMap!
 	
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
-			// Determine a location to display
-			let mapLocation = CLLocationCoordinate2DMake(37, -122)
-			let coordinateSpan = MKCoordinateSpanMake(1, 1)
-			userLocalizationMap.addAnnotation(mapLocation, withPinColor: WKInterfaceMapPinColor.Purple)
-			userLocalizationMap.setRegion(MKCoordinateRegion(center: mapLocation, span: coordinateSpan))
+	override func awakeWithContext(context: AnyObject?) {
+			super.awakeWithContext(context)
 		
-        // Configure interface objects here.
-    }
+		// Determine a location to display
+		let mapLocation = CLLocationCoordinate2DMake(37, -122)
+		let coordinateSpan = MKCoordinateSpanMake(1, 1)
+		userLocalizationMap.addAnnotation(mapLocation, withPinColor: WKInterfaceMapPinColor.Purple)
+		userLocalizationMap.setRegion(MKCoordinateRegion(center: mapLocation, span: coordinateSpan))
+	}
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-			if (WCSession.isSupported()) {
-				session = WCSession.defaultSession()
-				session.delegate = self
-				session.activateSession()
-			}
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
+	override func willActivate() {
+		super.willActivate()
+		if (WCSession.isSupported()) {
+			session = WCSession.defaultSession()
+			session.delegate = self
+			session.activateSession()
+		}
+	}
 
 	@IBAction func checkClosestSpaceShipAction() {
 

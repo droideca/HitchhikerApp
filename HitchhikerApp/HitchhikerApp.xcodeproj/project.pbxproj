@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6A8430FB1B832EB3007BE0EB /* AvailableSpaceshipsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8430FA1B832EB3007BE0EB /* AvailableSpaceshipsController.swift */; };
-		6AC9A6E31B835AF80010F4C9 /* AvailableSpaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E21B835AF80010F4C9 /* AvailableSpaceship.swift */; };
-		6AC9A6E51B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E41B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift */; };
-		6AC9A6E81B835DA80010F4C9 /* SpaceshipInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E71B835DA80010F4C9 /* SpaceshipInfo.swift */; };
+		6AC9A6E81B835DA80010F4C9 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E71B835DA80010F4C9 /* Spaceship.swift */; };
 		6AC9A6EA1B835FDE0010F4C9 /* SpaceshipInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E91B835FDE0010F4C9 /* SpaceshipInfoController.swift */; };
-		6AC9A6EC1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6EB1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift */; };
 		6AC9A6EE1B8361DB0010F4C9 /* JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6ED1B8361DB0010F4C9 /* JsonGen.swift */; };
 		A51B9BF61B8286D5008D0391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9BF51B8286D5008D0391 /* AppDelegate.swift */; };
 		A51B9BF81B8286D5008D0391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9BF71B8286D5008D0391 /* ViewController.swift */; };
@@ -32,6 +29,7 @@
 		A5896A111B83A4A700C8F64A /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5896A101B83A4A700C8F64A /* ConnectionManager.swift */; };
 		A5896A151B83AC5000C8F64A /* AvailableSpaceshipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5896A141B83AC5000C8F64A /* AvailableSpaceshipCell.swift */; };
 		A5896A171B83AE4200C8F64A /* WKInterfaceImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5896A161B83AE4200C8F64A /* WKInterfaceImageExtension.swift */; };
+		A5896A191B83BD7700C8F64A /* Spaceship+JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5896A181B83BD7700C8F64A /* Spaceship+JsonGen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,11 +90,8 @@
 
 /* Begin PBXFileReference section */
 		6A8430FA1B832EB3007BE0EB /* AvailableSpaceshipsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceshipsController.swift; sourceTree = "<group>"; };
-		6AC9A6E21B835AF80010F4C9 /* AvailableSpaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceship.swift; sourceTree = "<group>"; };
-		6AC9A6E41B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AvailableSpaceship+JsonGen.swift"; sourceTree = "<group>"; };
-		6AC9A6E71B835DA80010F4C9 /* SpaceshipInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceshipInfo.swift; sourceTree = "<group>"; };
+		6AC9A6E71B835DA80010F4C9 /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
 		6AC9A6E91B835FDE0010F4C9 /* SpaceshipInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceshipInfoController.swift; sourceTree = "<group>"; };
-		6AC9A6EB1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpaceshipInfo+JsonGen.swift"; sourceTree = "<group>"; };
 		6AC9A6ED1B8361DB0010F4C9 /* JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonGen.swift; sourceTree = "<group>"; };
 		A51B9BF21B8286D5008D0391 /* HitchhikerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitchhikerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51B9BF51B8286D5008D0391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +119,7 @@
 		A5896A101B83A4A700C8F64A /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		A5896A141B83AC5000C8F64A /* AvailableSpaceshipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceshipCell.swift; sourceTree = "<group>"; };
 		A5896A161B83AE4200C8F64A /* WKInterfaceImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKInterfaceImageExtension.swift; sourceTree = "<group>"; };
+		A5896A181B83BD7700C8F64A /* Spaceship+JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Spaceship+JsonGen.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,8 +237,7 @@
 		A582E1A41B839780002E5E68 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6AC9A6E71B835DA80010F4C9 /* SpaceshipInfo.swift */,
-				6AC9A6E21B835AF80010F4C9 /* AvailableSpaceship.swift */,
+				6AC9A6E71B835DA80010F4C9 /* Spaceship.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -278,8 +273,7 @@
 		A582E1A81B839921002E5E68 /* Parsers */ = {
 			isa = PBXGroup;
 			children = (
-				6AC9A6E41B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift */,
-				6AC9A6EB1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift */,
+				A5896A181B83BD7700C8F64A /* Spaceship+JsonGen.swift */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -413,6 +407,7 @@
 				TargetAttributes = {
 					A51B9BF11B8286D5008D0391 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = L7E3AY2W7R;
 					};
 					A51B9C051B8286D5008D0391 = {
 						CreatedOnToolsVersion = 7.0;
@@ -424,9 +419,11 @@
 					};
 					A51B9C191B8286D5008D0391 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = L7E3AY2W7R;
 					};
 					A51B9C281B8286D5008D0391 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = L7E3AY2W7R;
 					};
 				};
 			};
@@ -526,14 +523,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC9A6E31B835AF80010F4C9 /* AvailableSpaceship.swift in Sources */,
-				6AC9A6EC1B8360590010F4C9 /* SpaceshipInfo+JsonGen.swift in Sources */,
 				A51B9C311B8286D5008D0391 /* ExtensionDelegate.swift in Sources */,
 				A51B9C2F1B8286D5008D0391 /* RequestSpaceshipController.swift in Sources */,
-				6AC9A6E51B835D820010F4C9 /* AvailableSpaceship+JsonGen.swift in Sources */,
 				A582E1AB1B839C52002E5E68 /* Constants.swift in Sources */,
-				6AC9A6E81B835DA80010F4C9 /* SpaceshipInfo.swift in Sources */,
+				6AC9A6E81B835DA80010F4C9 /* Spaceship.swift in Sources */,
 				6AC9A6EA1B835FDE0010F4C9 /* SpaceshipInfoController.swift in Sources */,
+				A5896A191B83BD7700C8F64A /* Spaceship+JsonGen.swift in Sources */,
 				A5896A151B83AC5000C8F64A /* AvailableSpaceshipCell.swift in Sources */,
 				6A8430FB1B832EB3007BE0EB /* AvailableSpaceshipsController.swift in Sources */,
 				A5896A111B83A4A700C8F64A /* ConnectionManager.swift in Sources */,
@@ -681,10 +676,12 @@
 		A51B9C381B8286D5008D0391 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carolina Barreiro Cancela (G2WQEB7A47)";
 				INFOPLIST_FILE = "HitchhikerApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "a0ff7567-9ba4-440e-a0ea-c98f2183ed60";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -695,10 +692,13 @@
 		A51B9C391B8286D5008D0391 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carolina Barreiro Cancela (G2WQEB7A47)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carolina Barreiro Cancela (G2WQEB7A47)";
 				INFOPLIST_FILE = "HitchhikerApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "a0ff7567-9ba4-440e-a0ea-c98f2183ed60";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -710,11 +710,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carolina Barreiro Cancela (G2WQEB7A47)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = HitchhikerApp_WatchKit_Extension;
 				INFOPLIST_FILE = "HitchhikerApp WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a0ff7567-9ba4-440e-a0ea-c98f2183ed60";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -726,11 +728,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carolina Barreiro Cancela (G2WQEB7A47)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = HitchhikerApp_WatchKit_Extension;
 				INFOPLIST_FILE = "HitchhikerApp WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a0ff7567-9ba4-440e-a0ea-c98f2183ed60";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -742,10 +746,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carolina Barreiro Cancela (G2WQEB7A47)";
 				INFOPLIST_FILE = HitchhikerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a0ff7567-9ba4-440e-a0ea-c98f2183ed60";
 			};
 			name = Debug;
 		};
@@ -753,10 +759,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carolina Barreiro Cancela (G2WQEB7A47)";
 				INFOPLIST_FILE = HitchhikerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carolinabarreiro.HitchhikerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a0ff7567-9ba4-440e-a0ea-c98f2183ed60";
 			};
 			name = Release;
 		};

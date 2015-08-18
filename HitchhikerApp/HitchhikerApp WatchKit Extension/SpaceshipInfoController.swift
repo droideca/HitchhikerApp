@@ -16,43 +16,29 @@ class SpaceshipInfoController: WKInterfaceController {
 	@IBOutlet var specieDriverLabel: WKInterfaceLabel!
 	@IBOutlet var planetDriverLabel: WKInterfaceLabel!
 	
-	@IBOutlet var spaceshipImage: WKInterfaceGroup!
+	@IBOutlet var spaceshipImage: WKInterfaceImage!
 	@IBOutlet var buttonLabel: WKInterfaceLabel!
 	
-	var shipInfo : SpaceshipInfo!
+	var shipInfo : Spaceship!
 	
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
-    // Configure interface objects here.
-		var task: NSURLSessionDataTask?
-    let url = NSURL(string:Constants.API.AvailableSpaceshipURL)!
-    let conf = NSURLSessionConfiguration.defaultSessionConfiguration()
-    let session = NSURLSession(configuration: conf)
-    task = session.dataTaskWithURL(url) { (data, res, error) -> Void in
-      if let e = error {
-        print("dataTaskWithURL fail: \(e.debugDescription)")
-        return
-      }
-      if let d = data{
-        self.parseResults(d)
-      }
-    }
-    task!.resume()
+		if let context = context, let spaceship = Spaceship.decodeJson(context) {
+			shipInfo = spaceship
+			reloadData()
+		} else {
+			
+		}
   }
-  
-  func parseResults(data: NSData){
-    do {
-      if let json: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary {
-        let ship = SpaceshipInfo.decodeJson(json)
-        print(ship!.id)
-      }
-    } catch {
-      print(error)
-    }
-  }
+
 	
 	func reloadData(){
-		
+		nameDriverLabel.setText(shipInfo.nameDriver)
+		specieDriverLabel.setText(shipInfo.specie)
+		planetDriverLabel.setText(shipInfo.planet)
+		driverImage.setImageWithUrl(shipInfo.pictureDriver)
+		buttonLabel.setText(shipInfo.typeSpaceship)
+		spaceshipImage.setImageWithUrl(shipInfo.pictureSpaceship)
 	}
   
   override func willActivate() {

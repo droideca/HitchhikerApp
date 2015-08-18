@@ -6,11 +6,11 @@
 //  Copyright © 2015 CarolinaBarreiro. All rights reserved.
 //
 
-import Foundation
-
-class ConnectionManager {
-	func retrieveAvailableSpaceships(completion: ([AvailableSpaceship]?, NSError?) -> () ){
-		//{ (response, error) -> () in
-
-	
-}
+//import Foundation
+//
+//class ConnectionManager {
+//	func retrieveAvailableSpaceships(completion: ([AvailableSpaceship]?, NSError?) -> () ){
+//		//{ (response, error) -> () in
+//
+//	
+//}

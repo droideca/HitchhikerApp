@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SpaceshipInfo {
+struct Spaceship {
   let id: String
   let pictureDriver: NSURL
   let nameDriver: String

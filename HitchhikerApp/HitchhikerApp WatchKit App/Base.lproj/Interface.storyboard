@@ -76,7 +76,7 @@
                                     <imageView width="38" alignment="left" id="xFd-QP-cXl"/>
                                     <label alignment="left" verticalAlignment="center" text="Label" textAlignment="center" id="d3d-wq-l81"/>
                                 </items>
-                                <color key="backgroundColor" patternImage="7B056AD5-9BB6-4272-94DB-1519F1495381" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="90A8D0AB-F500-4950-88C7-B6728CC81DE1" colorSpace="pattern"/>
                             </group>
                             <connections>
                                 <action selector="requestSpaceship" destination="TWK-gu-pKC" id="R1Q-qR-LEi"/>
@@ -88,7 +88,7 @@
                         <outlet property="driverImage" destination="d6N-PL-EwE" id="ops-eM-d4y"/>
                         <outlet property="nameDriverLabel" destination="UGu-EX-AT6" id="MyM-Kb-kIM"/>
                         <outlet property="planetDriverLabel" destination="zgn-wt-OF9" id="hn9-T9-nA0"/>
-                        <outlet property="spaceshipImage" destination="72f-x6-vWu" id="iDQ-9j-36n"/>
+                        <outlet property="spaceshipImage" destination="xFd-QP-cXl" id="3QB-2z-yI5"/>
                         <outlet property="specieDriverLabel" destination="PGu-v8-YDf" id="a4a-UW-6ku"/>
                     </connections>
                 </controller>
@@ -97,7 +97,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="7B056AD5-9BB6-4272-94DB-1519F1495381" width="640" height="920">
+        <image name="90A8D0AB-F500-4950-88C7-B6728CC81DE1" width="640" height="920">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
