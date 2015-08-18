@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A8430FB1B832EB3007BE0EB /* AvailableSpaceShipsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8430FA1B832EB3007BE0EB /* AvailableSpaceShipsController.swift */; };
+		6AC9A6E31B835AF80010F4C9 /* AvailableSpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E21B835AF80010F4C9 /* AvailableSpaceShip.swift */; };
+		6AC9A6E51B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E41B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift */; };
+		6AC9A6E81B835DA80010F4C9 /* SpaceShipInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E71B835DA80010F4C9 /* SpaceShipInfo.swift */; };
+		6AC9A6EA1B835FDE0010F4C9 /* SpaceShipInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6E91B835FDE0010F4C9 /* SpaceShipInfoController.swift */; };
+		6AC9A6EC1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6EB1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift */; };
+		6AC9A6EE1B8361DB0010F4C9 /* JsonGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC9A6ED1B8361DB0010F4C9 /* JsonGen.swift */; };
 		A51B9BF61B8286D5008D0391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9BF51B8286D5008D0391 /* AppDelegate.swift */; };
 		A51B9BF81B8286D5008D0391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9BF71B8286D5008D0391 /* ViewController.swift */; };
 		A51B9BFB1B8286D5008D0391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51B9BF91B8286D5008D0391 /* Main.storyboard */; };
@@ -18,7 +25,7 @@
 		A51B9C211B8286D5008D0391 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51B9C1F1B8286D5008D0391 /* Interface.storyboard */; };
 		A51B9C231B8286D5008D0391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51B9C221B8286D5008D0391 /* Assets.xcassets */; };
 		A51B9C2A1B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A51B9C291B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A51B9C2F1B8286D5008D0391 /* RequestSpaceShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C2E1B8286D5008D0391 /* RequestSpaceShip.swift */; };
+		A51B9C2F1B8286D5008D0391 /* RequestSpaceShipController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C2E1B8286D5008D0391 /* RequestSpaceShipController.swift */; };
 		A51B9C311B8286D5008D0391 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */; };
 		A51B9C331B8286D5008D0391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51B9C321B8286D5008D0391 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -80,6 +87,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A8430FA1B832EB3007BE0EB /* AvailableSpaceShipsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceShipsController.swift; sourceTree = "<group>"; };
+		6AC9A6E21B835AF80010F4C9 /* AvailableSpaceShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSpaceShip.swift; sourceTree = "<group>"; };
+		6AC9A6E41B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AvailableSpaceShip+JsonGen.swift"; sourceTree = "<group>"; };
+		6AC9A6E71B835DA80010F4C9 /* SpaceShipInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceShipInfo.swift; sourceTree = "<group>"; };
+		6AC9A6E91B835FDE0010F4C9 /* SpaceShipInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceShipInfoController.swift; sourceTree = "<group>"; };
+		6AC9A6EB1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpaceShipInfo+JsonGen.swift"; sourceTree = "<group>"; };
+		6AC9A6ED1B8361DB0010F4C9 /* JsonGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonGen.swift; sourceTree = "<group>"; };
 		A51B9BF21B8286D5008D0391 /* HitchhikerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitchhikerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51B9BF51B8286D5008D0391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A51B9BF71B8286D5008D0391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +112,7 @@
 		A51B9C221B8286D5008D0391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51B9C241B8286D5008D0391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51B9C291B8286D5008D0391 /* HitchhikerApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HitchhikerApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A51B9C2E1B8286D5008D0391 /* RequestSpaceShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSpaceShip.swift; sourceTree = "<group>"; };
+		A51B9C2E1B8286D5008D0391 /* RequestSpaceShipController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSpaceShipController.swift; sourceTree = "<group>"; };
 		A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A51B9C321B8286D5008D0391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51B9C341B8286D5008D0391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -204,10 +218,17 @@
 		A51B9C2D1B8286D5008D0391 /* HitchhikerApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A51B9C2E1B8286D5008D0391 /* RequestSpaceShip.swift */,
+				A51B9C2E1B8286D5008D0391 /* RequestSpaceShipController.swift */,
+				6A8430FA1B832EB3007BE0EB /* AvailableSpaceShipsController.swift */,
 				A51B9C301B8286D5008D0391 /* ExtensionDelegate.swift */,
 				A51B9C321B8286D5008D0391 /* Assets.xcassets */,
 				A51B9C341B8286D5008D0391 /* Info.plist */,
+				6AC9A6E41B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift */,
+				6AC9A6E21B835AF80010F4C9 /* AvailableSpaceShip.swift */,
+				6AC9A6EB1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift */,
+				6AC9A6E71B835DA80010F4C9 /* SpaceShipInfo.swift */,
+				6AC9A6E91B835FDE0010F4C9 /* SpaceShipInfoController.swift */,
+				6AC9A6ED1B8361DB0010F4C9 /* JsonGen.swift */,
 			);
 			path = "HitchhikerApp WatchKit Extension";
 			sourceTree = "<group>";
@@ -310,6 +331,7 @@
 		A51B9BEA1B8286D5008D0391 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = CarolinaBarreiro;
 				TargetAttributes = {
@@ -428,8 +450,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC9A6E31B835AF80010F4C9 /* AvailableSpaceShip.swift in Sources */,
+				6AC9A6EC1B8360590010F4C9 /* SpaceShipInfo+JsonGen.swift in Sources */,
 				A51B9C311B8286D5008D0391 /* ExtensionDelegate.swift in Sources */,
-				A51B9C2F1B8286D5008D0391 /* RequestSpaceShip.swift in Sources */,
+				A51B9C2F1B8286D5008D0391 /* RequestSpaceShipController.swift in Sources */,
+				6AC9A6E51B835D820010F4C9 /* AvailableSpaceShip+JsonGen.swift in Sources */,
+				6AC9A6E81B835DA80010F4C9 /* SpaceShipInfo.swift in Sources */,
+				6AC9A6EA1B835FDE0010F4C9 /* SpaceShipInfoController.swift in Sources */,
+				6A8430FB1B832EB3007BE0EB /* AvailableSpaceShipsController.swift in Sources */,
+				6AC9A6EE1B8361DB0010F4C9 /* JsonGen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +747,7 @@
 				A51B9C391B8286D5008D0391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A51B9C3B1B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -726,6 +756,7 @@
 				A51B9C3D1B8286D5008D0391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A51B9C3F1B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerApp" */ = {
 			isa = XCConfigurationList;
@@ -734,6 +765,7 @@
 				A51B9C411B8286D5008D0391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A51B9C421B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerAppTests" */ = {
 			isa = XCConfigurationList;
@@ -742,6 +774,7 @@
 				A51B9C441B8286D5008D0391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A51B9C451B8286D5008D0391 /* Build configuration list for PBXNativeTarget "HitchhikerAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -750,6 +783,7 @@
 				A51B9C471B8286D5008D0391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

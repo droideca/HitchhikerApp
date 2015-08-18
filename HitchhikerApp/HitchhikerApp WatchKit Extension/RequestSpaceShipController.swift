@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 import WatchConnectivity
 
-class RequestSpaceShip: WKInterfaceController, WCSessionDelegate {
+class RequestSpaceShipController: WKInterfaceController, WCSessionDelegate {
 
 	var session : WCSession!
 	@IBOutlet var userLocalizationMap: WKInterfaceMap!

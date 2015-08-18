@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E26a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
     </dependencies>
     <scenes>
-        <!--Request Space Ship-->
+        <!--Request Space Ship Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="RequestSpaceShip" customModule="HitchhikerApp_WatchKit_Extension">
+                <controller id="AgC-eL-Hgc" customClass="RequestSpaceShipController" customModule="HitchhikerApp_WatchKit_Extension">
                     <items>
                         <map height="100" alignment="left" id="u73-hk-WmQ"/>
                         <button width="1" alignment="left" title="Button" id="a0b-HP-Sx1">
@@ -25,14 +25,14 @@
             </objects>
             <point key="canvasLocation" x="306" y="374"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Available Space Ships Controller-->
         <scene sceneID="rfH-PW-4Nr">
             <objects>
-                <controller hidesWhenLoading="NO" id="LeK-H7-H6m">
+                <controller hidesWhenLoading="NO" id="LeK-H7-H6m" customClass="AvailableSpaceShipsController" customModule="HitchhikerApp_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="yp2-yh-AUb">
                             <items>
-                                <tableRow id="T0c-Al-Gmx">
+                                <tableRow identifier="SpaceCell" id="T0c-Al-Gmx">
                                     <group key="rootItem" width="1" height="87.5" alignment="left" id="Ttf-Gk-chj">
                                         <items>
                                             <group width="88" height="86" alignment="center" radius="10" id="EYz-in-hdL" userLabel="GroupImage">
@@ -42,13 +42,31 @@
                                             </group>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <segue destination="TWK-gu-pKC" kind="push" id="Lj3-ai-pY7"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
+                        <button width="1" alignment="left" title="Button" id="PMS-4d-4zk">
+                            <connections>
+                                <segue destination="TWK-gu-pKC" kind="push" id="bcN-bG-xT0"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="511" y="374"/>
         </scene>
+        <!--Space Ship Info Controller-->
+        <scene sceneID="ujK-c3-3QZ">
+            <objects>
+                <controller hidesWhenLoading="NO" id="TWK-gu-pKC" customClass="SpaceShipInfoController" customModule="HitchhikerApp_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="374"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bcN-bG-xT0"/>
+    </inferredMetricsTieBreakers>
 </document>
