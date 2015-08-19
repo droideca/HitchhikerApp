@@ -16,8 +16,16 @@
                         <button alignment="left" id="a0b-HP-Sx1">
                             <group key="contentGroup" width="1" height="40" alignment="left" radius="6" id="Uja-HD-FNv">
                                 <items>
-                                    <imageView width="0.31" alignment="left" id="Jmf-eH-DuS"/>
-                                    <label alignment="left" verticalAlignment="center" text="Label" textAlignment="center" id="mEG-ws-10r"/>
+                                    <group width="0.29999999999999999" height="35" alignment="left" verticalAlignment="center" id="Eoh-Hf-j0e">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="center" verticalAlignment="center" image="IconHandVectorial" id="Jmf-eH-DuS">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </items>
+                                    </group>
+                                    <label alignment="left" verticalAlignment="center" text="Request ship" textAlignment="center" numberOfLines="2" id="mEG-ws-10r">
+                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                    </label>
                                 </items>
                                 <color key="backgroundColor" red="0.1058823529" green="0.49803921569999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </group>
@@ -42,21 +50,13 @@
                         <table alignment="left" id="yp2-yh-AUb">
                             <items>
                                 <tableRow identifier="AvailableSpaceshipCell" id="T0c-Al-Gmx" customClass="AvailableSpaceshipCell" customModule="HitchhikerApp_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="138.5" alignment="left" contentMode="scaleAspectFill" layout="vertical" radius="6" spacing="5" id="Ttf-Gk-chj">
+                                    <group key="rootItem" width="1" height="138.5" alignment="left" backgroundImage="IconLoading" contentMode="scaleAspectFill" layout="vertical" radius="6" spacing="5" id="Ttf-Gk-chj">
                                         <items>
                                             <label width="1" widthAdjustment="1" height="23.5" alignment="left" text="Label" numberOfLines="2" id="e4j-4I-zg0"/>
-                                            <group width="100" height="100" alignment="center" radius="10" id="EYz-in-hdL" userLabel="GroupImage">
-                                                <items>
-                                                    <imageView width="111" height="114" alignment="left" contentMode="scaleAspectFill" id="Q3z-YO-pSM">
-                                                        <color key="tintColor" red="0.1058823529" green="0.49803921569999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </imageView>
-                                                </items>
-                                            </group>
                                         </items>
                                     </group>
                                     <connections>
                                         <outlet property="groupBackground" destination="Ttf-Gk-chj" id="B0z-0Z-kbJ"/>
-                                        <outlet property="spaceshipImage" destination="Q3z-YO-pSM" id="cvA-Pj-w9d"/>
                                         <outlet property="spaceshipNameLabel" destination="e4j-4I-zg0" id="XBa-l9-xTg"/>
                                         <segue destination="TWK-gu-pKC" kind="push" identifier="SegueSpaceshipInfo" id="Lj3-ai-pY7"/>
                                     </connections>
@@ -76,31 +76,23 @@
             <objects>
                 <controller hidesWhenLoading="NO" id="TWK-gu-pKC" customClass="SpaceshipInfoController" customModule="HitchhikerApp_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" id="GLc-fK-Zgc">
+                        <group width="1" alignment="left" layout="vertical" id="GLc-fK-Zgc">
                             <items>
-                                <group width="0.29999999999999999" height="40" alignment="left" radius="6" id="u2p-FE-uwl">
+                                <label alignment="center" text="Name" textAlignment="center" id="UGu-EX-AT6"/>
+                                <group width="80" height="80" alignment="center" verticalAlignment="center" radius="6" id="u2p-FE-uwl">
                                     <items>
-                                        <imageView width="50" height="50" alignment="left" contentMode="scaleAspectFill" id="d6N-PL-EwE"/>
-                                    </items>
-                                </group>
-                                <group width="0.65000000000000002" alignment="right" verticalAlignment="center" layout="vertical" id="Q7T-rk-IYV">
-                                    <items>
-                                        <label alignment="left" text="Name:" id="lUb-XX-y0z">
-                                            <color key="textColor" red="0.044012479484081268" green="0.65441370010375977" blue="0.71434849500656128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
-                                        </label>
-                                        <label alignment="left" text="Name" id="UGu-EX-AT6"/>
+                                        <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="IconLoading" contentMode="scaleAspectFill" id="d6N-PL-EwE"/>
                                     </items>
                                 </group>
                             </items>
                         </group>
-                        <group width="1" alignment="left" layout="vertical" id="eWJ-Cd-JsM">
+                        <group width="0.90000000000000002" alignment="center" layout="vertical" id="eWJ-Cd-JsM">
                             <items>
-                                <label alignment="left" text="Specie:" id="sKc-22-shF">
+                                <label alignment="left" text="Specie:" numberOfLines="2" id="sKc-22-shF">
                                     <color key="textColor" red="0.044012479484081268" green="0.65441370010375977" blue="0.71434849500656128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                 </label>
-                                <label alignment="left" text="Specie" id="PGu-v8-YDf"/>
+                                <label alignment="left" text="Specie" numberOfLines="2" id="PGu-v8-YDf"/>
                                 <label alignment="left" text="Planet:" id="79N-kg-e6h">
                                     <color key="textColor" red="0.044012479484081268" green="0.65441370010375977" blue="0.71434849500656128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
@@ -111,7 +103,13 @@
                         <button alignment="left" id="zJn-pL-aWi">
                             <group key="contentGroup" width="1" height="40" alignment="left" id="72f-x6-vWu">
                                 <items>
-                                    <imageView width="38" alignment="left" id="xFd-QP-cXl"/>
+                                    <group width="0.29999999999999999" height="35" alignment="left" verticalAlignment="center" id="qQN-0F-GNf">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="center" verticalAlignment="center" image="IconHandVectorial" id="N6e-mL-v9S">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </items>
+                                    </group>
                                     <label alignment="left" verticalAlignment="center" text="Request this ship" textAlignment="center" numberOfLines="2" id="d3d-wq-l81">
                                         <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                     </label>
@@ -120,6 +118,7 @@
                             </group>
                             <connections>
                                 <action selector="requestSpaceship" destination="TWK-gu-pKC" id="R1Q-qR-LEi"/>
+                                <segue destination="9dZ-qi-bL7" kind="push" id="fTM-dR-0Tl"/>
                             </connections>
                         </button>
                     </items>
@@ -129,12 +128,25 @@
                         <outlet property="groupLabels" destination="eWJ-Cd-JsM" id="0kL-0l-NKw"/>
                         <outlet property="nameDriverLabel" destination="UGu-EX-AT6" id="MyM-Kb-kIM"/>
                         <outlet property="planetDriverLabel" destination="zgn-wt-OF9" id="hn9-T9-nA0"/>
-                        <outlet property="spaceshipImage" destination="xFd-QP-cXl" id="3QB-2z-yI5"/>
                         <outlet property="specieDriverLabel" destination="PGu-v8-YDf" id="a4a-UW-6ku"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="707" y="373.75"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="3la-Ji-lnm">
+            <objects>
+                <controller hidesWhenLoading="NO" id="9dZ-qi-bL7">
+                    <items>
+                        <imageView width="80" height="80" alignment="center" verticalAlignment="center" image="IconHandFinished" id="9fZ-cn-ojr"/>
+                        <label width="0.90000000000000002" alignment="center" verticalAlignment="center" text="Don't panic! The spaceship is in your way" textAlignment="center" numberOfLines="3" id="IOU-Lk-eXz">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="947" y="374"/>
         </scene>
     </scenes>
 </document>

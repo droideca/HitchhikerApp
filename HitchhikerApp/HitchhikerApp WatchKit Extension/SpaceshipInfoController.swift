@@ -17,7 +17,6 @@ class SpaceshipInfoController: WKInterfaceController {
 	@IBOutlet var planetDriverLabel: WKInterfaceLabel!
 	
 	@IBOutlet var groupLabels: WKInterfaceGroup!
-	@IBOutlet var spaceshipImage: WKInterfaceImage!
 	@IBOutlet var buttonLabel: WKInterfaceLabel!
 	
 	var shipInfo : Spaceship!
@@ -39,7 +38,7 @@ class SpaceshipInfoController: WKInterfaceController {
 		specieDriverLabel.setText(shipInfo.specie)
 		planetDriverLabel.setText(shipInfo.planet)
 		driverImage.setImageWithUrl(shipInfo.pictureDriver)
-		buttonLabel.setText(shipInfo.typeSpaceship)
+		buttonLabel.setText("Request " + shipInfo.typeSpaceship)
 		//spaceshipImage.setImageWithUrl(shipInfo.pictureSpaceship)
 	}
   
