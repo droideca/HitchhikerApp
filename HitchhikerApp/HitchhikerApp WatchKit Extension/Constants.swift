@@ -10,6 +10,7 @@ import Foundation
 
 struct Constants {
 	struct API {
-		static let AvailableSpaceshipURL = "http://192.168.192.63:3000/api/spaceships"
+		static let AvailableSpaceshipURL = "http://localhost:3000/api/spaceships"
+		static let SpaceshipsURL = "http://beta.json-generator.com/api/json/get/N1qzN12o"
 	}
 }

@@ -67,11 +67,25 @@ class AvailableSpaceshipsController: WKInterfaceController {
   }
 	
 	func reloadTable() {
+		//		if let data:NSData = NSData(contentsOfURL: shipInfo.pictureSpaceship) {
+		//			if let placeholder = UIImage(data: data) {
+		//				dispatch_async(dispatch_get_main_queue()) {
+		//					self.groupLabels.setBackgroundImage(placeholder)
+		//				}
+		//			}
+		//		}
 		table.setNumberOfRows(availablesSpaceships.count, withRowType: cellIdentifier)
 		for (index,ship) in availablesSpaceships.enumerate() {
 			if let row = table.rowControllerAtIndex(index) as? AvailableSpaceshipCell {
-				row.spaceshipImage.setImageWithUrl(ship.pictureSpaceship)
+				//row.spaceshipImage.setImageWithUrl(ship.pictureSpaceship)
 				row.spaceshipNameLabel.setText(ship.typeSpaceship)
+				if let data:NSData = NSData(contentsOfURL: ship.pictureSpaceship) {
+					if let placeholder = UIImage(data: data) {
+						dispatch_async(dispatch_get_main_queue()) {
+						row.groupBackground.setBackgroundImage(placeholder)
+						}
+					}
+				}
 			}
 		}
 	}

@@ -16,6 +16,7 @@ class SpaceshipInfoController: WKInterfaceController {
 	@IBOutlet var specieDriverLabel: WKInterfaceLabel!
 	@IBOutlet var planetDriverLabel: WKInterfaceLabel!
 	
+	@IBOutlet var groupLabels: WKInterfaceGroup!
 	@IBOutlet var spaceshipImage: WKInterfaceImage!
 	@IBOutlet var buttonLabel: WKInterfaceLabel!
 	
@@ -33,12 +34,13 @@ class SpaceshipInfoController: WKInterfaceController {
 
 	
 	func reloadData(){
+	
 		nameDriverLabel.setText(shipInfo.nameDriver)
 		specieDriverLabel.setText(shipInfo.specie)
 		planetDriverLabel.setText(shipInfo.planet)
 		driverImage.setImageWithUrl(shipInfo.pictureDriver)
 		buttonLabel.setText(shipInfo.typeSpaceship)
-		spaceshipImage.setImageWithUrl(shipInfo.pictureSpaceship)
+		//spaceshipImage.setImageWithUrl(shipInfo.pictureSpaceship)
 	}
   
   override func willActivate() {
