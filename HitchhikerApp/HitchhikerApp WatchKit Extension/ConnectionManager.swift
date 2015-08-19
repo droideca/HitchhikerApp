@@ -15,10 +15,10 @@ protocol ConnectionProtocol {
 
 class ConnectionManager {
 	
-	let delegate: ConnectionProtocol
+	var delegate: ConnectionProtocol!
 	
-	init(delegate: ConnectionProtocol) {
-			self.delegate = delegate
+	init() {
+		
 	}
 
 	func retrieveSpaceships(){
@@ -39,8 +39,11 @@ class ConnectionManager {
 	}
 	
 	func parseResults(data: NSData){
+		guard let delegate = self.delegate else {
+			assertionFailure("You need to provide a delegate")
+			return
+		}
 		do {
-
 			if let json: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary {
 				if let arrayJson = json["data"] as? NSArray {
 					var spaceships: [Spaceship] = []
@@ -50,6 +53,7 @@ class ConnectionManager {
 						}
 					}
 					delegate.didRecieveResults(spaceships)
+					
 				}
 			}
 		} catch {

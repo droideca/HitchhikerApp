@@ -9,7 +9,6 @@
 import WatchKit
 
 class SpaceshipInfoController: WKInterfaceController {
-  //http://blog.andydrizen.co.uk/blog/2015/01/03/making-watchkit-animations/
 
 	@IBOutlet var nameDriverLabel: WKInterfaceLabel!
 	@IBOutlet var driverImage: WKInterfaceImage!
@@ -27,29 +26,21 @@ class SpaceshipInfoController: WKInterfaceController {
 			shipInfo = spaceship
 			reloadData()
 		} else {
-			
+			// TODO: Show error
 		}
   }
 
-	
 	func reloadData(){
-	
 		nameDriverLabel.setText(shipInfo.nameDriver)
 		specieDriverLabel.setText(shipInfo.specie)
 		planetDriverLabel.setText(shipInfo.planet)
 		driverImage.setImageWithUrl(shipInfo.pictureDriver)
 		buttonLabel.setText("Request " + shipInfo.typeSpaceship)
-		//spaceshipImage.setImageWithUrl(shipInfo.pictureSpaceship)
 	}
   
   override func willActivate() {
     // This method is called when watch view controller is about to be visible to user
     super.willActivate()
   }
-
-	@IBAction func requestSpaceship() {
-	}
-	
-	
 	
 }

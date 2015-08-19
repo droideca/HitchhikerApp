@@ -30,7 +30,6 @@
                                 <color key="backgroundColor" red="0.1058823529" green="0.49803921569999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </group>
                             <connections>
-                                <action selector="checkClosestSpaceShipAction" destination="AgC-eL-Hgc" id="xs8-we-Ryf"/>
                                 <segue destination="LeK-H7-H6m" kind="push" id="Ja2-lW-Wjl"/>
                             </connections>
                         </button>
@@ -117,7 +116,6 @@
                                 <color key="backgroundColor" red="0.1058823529" green="0.49803921569999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </group>
                             <connections>
-                                <action selector="requestSpaceship" destination="TWK-gu-pKC" id="R1Q-qR-LEi"/>
                                 <segue destination="9dZ-qi-bL7" kind="push" id="fTM-dR-0Tl"/>
                             </connections>
                         </button>

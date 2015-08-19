@@ -14,12 +14,12 @@ class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 	
 	let cellIdentifier = "AvailableSpaceshipCell"
 	let segueIdentifierShipInfo = "SegueSpaceshipInfo"
-	var connectionManager: ConnectionManager!
+	var connectionManager: ConnectionManager = ConnectionManager()
 	var availablesSpaceships: [Spaceship] = []
 
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
-		connectionManager = ConnectionManager(delegate: self)
+		connectionManager.delegate = self
 		connectionManager.retrieveSpaceships()
   }
 	
@@ -34,12 +34,15 @@ class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 	
 	func didRecieveError(error: ErrorType!){
 		print(error)
+		// TODO: Show error
 	}
 	
 	func didRecieveResults(spaceships: [Spaceship]){
 		if spaceships.count > 0 {
 			availablesSpaceships = spaceships
 			reloadTable()
+		} else {
+			// TODO: Show in table "There is no spaceships next to you, but Don't panic!"
 		}
 	}
 	
@@ -58,8 +61,5 @@ class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 			}
 		}
 	}
-
-  
-
 
 }
