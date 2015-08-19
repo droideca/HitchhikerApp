@@ -10,7 +10,6 @@ import WatchKit
 
 class AvailableSpaceshipCell: NSObject {
 	
-	@IBOutlet var groupBackground: WKInterfaceGroup!
 	@IBOutlet var spaceshipNameLabel: WKInterfaceLabel!
-	
+	@IBOutlet var spaceshipImage: WKInterfaceImage!
 }

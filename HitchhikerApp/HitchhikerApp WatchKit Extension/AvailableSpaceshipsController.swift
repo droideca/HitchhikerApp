@@ -19,6 +19,12 @@ class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
+		
+		table.setNumberOfRows(1, withRowType: cellIdentifier)
+		if let row = table.rowControllerAtIndex(0) as? AvailableSpaceshipCell {
+			row.spaceshipNameLabel.setText("Loading")
+		}
+		
 		connectionManager.delegate = self
 		connectionManager.retrieveSpaceships()
   }
@@ -29,10 +35,6 @@ class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 	
   override func willActivate() {
     super.willActivate()
-		table.setNumberOfRows(1, withRowType: cellIdentifier)
-		if let row = table.rowControllerAtIndex(0) as? AvailableSpaceshipCell {
-			row.spaceshipNameLabel.setText("Loading")
-		}
   }
 	
 	func didRecieveError(error: ErrorType!){
@@ -54,13 +56,7 @@ class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 		for (index,ship) in availablesSpaceships.enumerate() {
 			if let row = table.rowControllerAtIndex(index) as? AvailableSpaceshipCell {
 				row.spaceshipNameLabel.setText(ship.typeSpaceship)
-				if let data:NSData = NSData(contentsOfURL: ship.pictureSpaceship) {
-					if let placeholder = UIImage(data: data) {
-						dispatch_async(dispatch_get_main_queue()) {
-						row.groupBackground.setBackgroundImage(placeholder)
-						}
-					}
-				}
+				row.spaceshipImage.setImageWithUrl(ship.pictureSpaceship)
 			}
 		}
 	}

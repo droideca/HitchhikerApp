@@ -24,7 +24,7 @@ class RequestSpaceshipController: WKInterfaceController, CLLocationManagerDelega
 	
 		// Determine a location to display
 		let mapLocation = CLLocationCoordinate2DMake(37, -122)
-		let coordinateSpan = MKCoordinateSpanMake(1, 1)
+		let coordinateSpan = MKCoordinateSpanMake(25, 25)
 		userLocalizationMap.setRegion(MKCoordinateRegion(center: mapLocation, span: coordinateSpan))
 	}
 	
@@ -33,7 +33,7 @@ class RequestSpaceshipController: WKInterfaceController, CLLocationManagerDelega
 	func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 		if let location = locations.first {
 			print(location.coordinate)
-			let coordinateSpan = MKCoordinateSpanMake(1, 1)
+			let coordinateSpan = MKCoordinateSpanMake(25, 25)
 			userLocalizationMap.addAnnotation(location.coordinate, withPinColor: WKInterfaceMapPinColor.Purple)
 			userLocalizationMap.setRegion(MKCoordinateRegion(center: location.coordinate, span: coordinateSpan))
 			locationManager.stopUpdatingLocation()

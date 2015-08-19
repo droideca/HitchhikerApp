@@ -24,7 +24,7 @@
                                         </items>
                                     </group>
                                     <label alignment="left" verticalAlignment="center" text="Request ship" textAlignment="center" numberOfLines="2" id="mEG-ws-10r">
-                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
                                     </label>
                                 </items>
                                 <color key="backgroundColor" red="0.1058823529" green="0.49803921569999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,13 +49,27 @@
                         <table alignment="left" id="yp2-yh-AUb">
                             <items>
                                 <tableRow identifier="AvailableSpaceshipCell" id="T0c-Al-Gmx" customClass="AvailableSpaceshipCell" customModule="HitchhikerApp_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="138.5" alignment="left" backgroundImage="IconLoading" contentMode="scaleAspectFill" layout="vertical" radius="6" spacing="5" id="Ttf-Gk-chj">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" contentMode="scaleAspectFill" layout="vertical" radius="6" spacing="4" id="Ttf-Gk-chj">
                                         <items>
-                                            <label width="1" widthAdjustment="1" height="23.5" alignment="left" text="Label" numberOfLines="2" id="e4j-4I-zg0"/>
+                                            <group width="1" height="24" alignment="left" radius="6" id="vEs-1x-Vnt">
+                                                <items>
+                                                    <label width="0.94999999999999996" alignment="center" verticalAlignment="center" text="Label" textAlignment="left" baselineAdjustment="alignCenters" numberOfLines="2" id="e4j-4I-zg0">
+                                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.1058823529" green="0.49803921569999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <group width="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" radius="6" spacing="2" id="MNn-rs-RoZ">
+                                                <items>
+                                                    <imageView width="1" height="110" alignment="left" image="IconLoading" contentMode="scaleAspectFill" id="wk0-Fd-ge0"/>
+                                                </items>
+                                            </group>
                                         </items>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="1" right="1" top="2" bottom="2"/>
                                     </group>
                                     <connections>
-                                        <outlet property="groupBackground" destination="Ttf-Gk-chj" id="B0z-0Z-kbJ"/>
+                                        <outlet property="spaceshipImage" destination="wk0-Fd-ge0" id="LoK-XQ-nUN"/>
                                         <outlet property="spaceshipNameLabel" destination="e4j-4I-zg0" id="XBa-l9-xTg"/>
                                         <segue destination="TWK-gu-pKC" kind="push" identifier="SegueSpaceshipInfo" id="Lj3-ai-pY7"/>
                                     </connections>
@@ -70,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="511" y="374"/>
         </scene>
-        <!--Spaceship Info Controller-->
+        <!--Spaceship-->
         <scene sceneID="ujK-c3-3QZ">
             <objects>
-                <controller hidesWhenLoading="NO" id="TWK-gu-pKC" customClass="SpaceshipInfoController" customModule="HitchhikerApp_WatchKit_Extension">
+                <controller title="Spaceship" hidesWhenLoading="NO" id="TWK-gu-pKC" customClass="SpaceshipInfoController" customModule="HitchhikerApp_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="GLc-fK-Zgc">
                             <items>
@@ -109,7 +123,7 @@
                                             </imageView>
                                         </items>
                                     </group>
-                                    <label alignment="left" verticalAlignment="center" text="Request this ship" textAlignment="center" numberOfLines="2" id="d3d-wq-l81">
+                                    <label alignment="left" verticalAlignment="center" text="Request this ship" textAlignment="left" numberOfLines="2" id="d3d-wq-l81">
                                         <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                     </label>
                                 </items>
