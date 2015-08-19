@@ -28,8 +28,11 @@ class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 	}
 	
   override func willActivate() {
-    // This method is called when watch view controller is about to be visible to user
     super.willActivate()
+		table.setNumberOfRows(1, withRowType: cellIdentifier)
+		if let row = table.rowControllerAtIndex(0) as? AvailableSpaceshipCell {
+			row.spaceshipNameLabel.setText("Loading")
+		}
   }
 	
 	func didRecieveError(error: ErrorType!){
