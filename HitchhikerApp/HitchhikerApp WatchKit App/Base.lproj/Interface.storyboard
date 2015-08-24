@@ -61,7 +61,9 @@
                                             </group>
                                             <group width="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" radius="6" spacing="2" id="MNn-rs-RoZ">
                                                 <items>
-                                                    <imageView width="1" height="110" alignment="left" image="IconLoading" contentMode="scaleAspectFill" id="wk0-Fd-ge0"/>
+                                                    <imageView width="1" height="110" alignment="left" image="IconLoading" contentMode="scaleAspectFill" id="wk0-Fd-ge0">
+                                                        <variation key="device=watch42mm" height="120"/>
+                                                    </imageView>
                                                 </items>
                                             </group>
                                         </items>
@@ -146,16 +148,20 @@
             </objects>
             <point key="canvasLocation" x="707" y="373.75"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Confirmation Controller-->
         <scene sceneID="3la-Ji-lnm">
             <objects>
-                <controller hidesWhenLoading="NO" id="9dZ-qi-bL7">
+                <controller hidesWhenLoading="NO" id="9dZ-qi-bL7" customClass="ConfirmationController" customModule="HitchhikerApp_WatchKit_Extension">
                     <items>
-                        <imageView width="80" height="80" alignment="center" verticalAlignment="center" image="IconHandFinished" id="9fZ-cn-ojr"/>
-                        <label width="0.90000000000000002" alignment="center" verticalAlignment="center" text="Don't panic! The spaceship is in your way" textAlignment="center" numberOfLines="3" id="IOU-Lk-eXz">
+                        <imageView width="80" height="80" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="9fZ-cn-ojr"/>
+                        <label width="0.90000000000000002" alignment="center" verticalAlignment="center" text="Grab your towel! The spaceship is in your way" textAlignment="center" numberOfLines="3" id="IOU-Lk-eXz">
                             <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                            <variation key="device=watch42mm" text="Grab your towel! The spaceship is in your way"/>
                         </label>
                     </items>
+                    <connections>
+                        <outlet property="handAnimationImageView" destination="9fZ-cn-ojr" id="lHo-hg-AG1"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="947" y="374"/>
