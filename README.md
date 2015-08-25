@@ -8,6 +8,6 @@ This app was created to have fun and take a look to Meteor (the backend of the a
 * NSURLSessionDataTask
 * Animations
 
-![](http://carolinabarreiro.com/cousas/hitchhikerapp.gif)
+![](http://carolinabarreiro.com/cousas/hitchhickerapp.gif)
 
 Any doubts? Contact me in twitter [@droideca](https://www.twitter.com/droideca).
