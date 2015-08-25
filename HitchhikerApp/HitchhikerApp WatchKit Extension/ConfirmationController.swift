@@ -14,9 +14,7 @@ class ConfirmationController: WKInterfaceController {
 	
 	override func awakeWithContext(context: AnyObject?) {
 		super.awakeWithContext(context)
-		
 		handAnimationImageView.setImageNamed("hand")
 		handAnimationImageView.startAnimating()
-		
 	}
 }

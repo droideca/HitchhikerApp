@@ -11,6 +11,7 @@ import WatchKit
 class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 	
 	@IBOutlet var table: WKInterfaceTable!
+	@IBOutlet var loadingImage: WKInterfaceImage!
 	
 	let cellIdentifier = "AvailableSpaceshipCell"
 	let segueIdentifierShipInfo = "SegueSpaceshipInfo"
@@ -19,23 +20,17 @@ class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
-		
-		table.setNumberOfRows(1, withRowType: cellIdentifier)
-		if let row = table.rowControllerAtIndex(0) as? AvailableSpaceshipCell {
-			row.spaceshipNameLabel.setText("Loading")
-		}
-		
 		connectionManager.delegate = self
 		connectionManager.retrieveSpaceships()
-  }
+	}
+	
+	override func willActivate() {
+		super.willActivate()
+	}
 	
 	override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
 			return availablesSpaceships[rowIndex].encodeJson()
 	}
-	
-  override func willActivate() {
-    super.willActivate()
-  }
 	
 	func didRecieveError(error: ErrorType!){
 		print(error)
@@ -45,9 +40,8 @@ class AvailableSpaceshipsController: WKInterfaceController, ConnectionProtocol {
 	func didRecieveResults(spaceships: [Spaceship]){
 		if spaceships.count > 0 {
 			availablesSpaceships = spaceships
+			loadingImage.setHidden(true)
 			reloadTable()
-		} else {
-			// TODO: Show in table "There is no spaceships next to you, but Don't panic!"
 		}
 	}
 	

@@ -52,17 +52,12 @@ class ConnectionManager {
 							spaceships.append(ship)
 						}
 					}
-					if spaceships.count > 0 {
-						delegate.didRecieveResults(spaceships)
-					} else {
-						print(NSString(data: data, encoding: NSUTF8StringEncoding))
-						delegate.didRecieveError(nil)
-					}
-					
+					delegate.didRecieveResults(spaceships)
 				}
 			}
 		} catch {
 			print(error)
+			print(NSString(data: data, encoding: NSUTF8StringEncoding))
 			delegate.didRecieveError(error)
 		}
 	}

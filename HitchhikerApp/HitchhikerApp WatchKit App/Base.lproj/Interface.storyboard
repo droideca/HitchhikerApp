@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E26a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
@@ -46,6 +46,7 @@
             <objects>
                 <controller title="Spaceships" hidesWhenLoading="NO" id="LeK-H7-H6m" customClass="AvailableSpaceshipsController" customModule="HitchhikerApp_WatchKit_Extension">
                     <items>
+                        <imageView width="1" height="179" alignment="left" image="spinner" contentMode="center" id="uAh-VH-oSF"/>
                         <table alignment="left" id="yp2-yh-AUb">
                             <items>
                                 <tableRow identifier="AvailableSpaceshipCell" id="T0c-Al-Gmx" customClass="AvailableSpaceshipCell" customModule="HitchhikerApp_WatchKit_Extension">
@@ -80,11 +81,12 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="loadingImage" destination="uAh-VH-oSF" id="Ifq-2D-uTk"/>
                         <outlet property="table" destination="yp2-yh-AUb" id="9iE-WQ-Vox"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="511" y="374"/>
+            <point key="canvasLocation" x="511" y="397"/>
         </scene>
         <!--Spaceship-->
         <scene sceneID="ujK-c3-3QZ">
@@ -146,7 +148,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="707" y="373.75"/>
+            <point key="canvasLocation" x="751" y="396.75"/>
         </scene>
         <!--Confirmation Controller-->
         <scene sceneID="3la-Ji-lnm">
